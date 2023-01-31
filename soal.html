@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class ="bg-secondary-subtle">
+	<!-- soal -->
+	<div class="alert alert-secondary d-flex" role="alert">
+		<div class="text-success" id="pesan"></div>
+		<span class="badge bg-primary ms-auto p-2" id="nilai">Nilai : 0</span>
+	  </div>
+	<div class="container-fluid">
+		<div class="card border-primary mt-3 mb-3" style="max-width: 100%;">
+		  <div class="card-body text-primary">
+			<h5 class="card-title" id="judul_soal" >Soal #1 </h5>
+			<p class="card-text" id="content_soal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+	  <ul class="list-group">
+		  <li class="list-group-item border-info" id="groupA">
+			<input class="form-check-input me-1" type="radio" name="listAnswers" value="A" id="opsiA">
+			<label class="form-check-label" for="opsiA">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label>
+		  </li>
+		  <li class="list-group-item border-info" id="groupB">
+			<input class="form-check-input me-1" type="radio" name="listAnswers" value="B" id="opsiB">
+			<label class="form-check-label" for="opsiB">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label>
+		  </li>
+		  <li class="list-group-item border-info" id="groupC">
+			<input class="form-check-input me-1" type="radio" name="listAnswers" value="C" id="opsiC">
+			<label class="form-check-label" for="opsiC">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label>
+		  </li>
+		  <li class="list-group-item border-info" id="groupD">
+			<input class="form-check-input me-1" type="radio" name="listAnswers" value="D" id="opsiD">
+			<label class="form-check-label" for="opsiD">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label>
+		  </li>
+		  <li class="list-group-item border-info" id="groupE">
+			<input class="form-check-input me-1" type="radio" name="listAnswers" value="E" id="opsiE">
+			<label class="form-check-label" for="opsiE">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label>
+		  </li>
+		</ul>
+	<div>
+	
+	<div class="row justify-content-center mb-5">
+		<button type="button" class="btn btn-warning m-2 col-4" id="btn-update" onclick="updateSoal()">Update Soal</button>
+		<button type="button" class="btn btn-primary m-2 col-4" id="btn-periksa" onclick="periksaSoal(this)">Periksa</button>
+	</div>
+	<br>
+	
+	
+	<div class="accordion fixed-bottom sticky-lg-bottom " style="max-height:  70%; overflow: auto;" id="accordionExample">
+	  <div class="accordion-item ">
+		<h2 class="accordion-header" id="headingThree">
+		  <button class="accordion-button collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			Penjelasan
+		  </button>
+		</h2>
+		<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+		  <div class="accordion-body" id="penjelasan">
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script>
+		const _0x4cceb5=_0x3b62;(function(_0x301786,_0x41decd){const _0x3bb6c2=_0x3b62,_0xa53156=_0x301786();while(!![]){try{const _0x974a19=-parseInt(_0x3bb6c2(0x88))/0x1+-parseInt(_0x3bb6c2(0x97))/0x2+parseInt(_0x3bb6c2(0xb3))/0x3*(-parseInt(_0x3bb6c2(0xb1))/0x4)+parseInt(_0x3bb6c2(0x8f))/0x5*(parseInt(_0x3bb6c2(0xa0))/0x6)+parseInt(_0x3bb6c2(0x81))/0x7*(parseInt(_0x3bb6c2(0xaa))/0x8)+-parseInt(_0x3bb6c2(0x93))/0x9+parseInt(_0x3bb6c2(0x84))/0xa;if(_0x974a19===_0x41decd)break;else _0xa53156['push'](_0xa53156['shift']());}catch(_0x3840bb){_0xa53156['push'](_0xa53156['shift']());}}}(_0x1226,0xdd920));const key=_0x4cceb5(0x8c),sheetID=_0x4cceb5(0x9e),range=_0x4cceb5(0xb6),url=_0x4cceb5(0x9b);var soal,answer,selectedAnswer,index=0x0,textPenjelasan,nilaiCount=0x0;const radioButtons=document['querySelectorAll']('input[name=\x22listAnswers\x22]'),judul=document['getElementById'](_0x4cceb5(0x9c)),content=document[_0x4cceb5(0xa9)](_0x4cceb5(0xad)),opsiA=document[_0x4cceb5(0xaf)](_0x4cceb5(0x82)),opsiB=document[_0x4cceb5(0xaf)]('[for=\x22opsiB\x22]'),opsiC=document[_0x4cceb5(0xaf)](_0x4cceb5(0xae)),opsiD=document[_0x4cceb5(0xaf)](_0x4cceb5(0xa8)),opsiE=document['querySelector'](_0x4cceb5(0x83)),penjelasan=document[_0x4cceb5(0xa9)]('penjelasan'),pesan=document['getElementById'](_0x4cceb5(0x95)),nilai=document[_0x4cceb5(0xa9)]('nilai');localStorage[_0x4cceb5(0x8a)](_0x4cceb5(0xb4))==null?fetch(url+sheetID+range+key)['then'](_0x59d060=>_0x59d060[_0x4cceb5(0x8b)]())[_0x4cceb5(0xa2)](_0x399b33=>{const _0x569f9b=_0x4cceb5;localStorage[_0x569f9b(0x91)]('soal',JSON[_0x569f9b(0xa1)](_0x399b33[_0x569f9b(0x94)])),soal=_0x399b33['values'],setSoal(soal);})[_0x4cceb5(0xa7)](_0x143408=>{const _0x63ce25=_0x4cceb5;console[_0x63ce25(0x98)](_0x143408);}):(soal=JSON['parse'](localStorage[_0x4cceb5(0x8a)](_0x4cceb5(0xb4))),setSoal(soal));function _0x3b62(_0x1e2411,_0x3c5f34){const _0x122652=_0x1226();return _0x3b62=function(_0x3b6244,_0x1fa46d){_0x3b6244=_0x3b6244-0x80;let _0x267b6b=_0x122652[_0x3b6244];return _0x267b6b;},_0x3b62(_0x1e2411,_0x3c5f34);}function updateSoal(){const _0x368778=_0x4cceb5;localStorage[_0x368778(0x85)](),location[_0x368778(0x9a)]();}function setSoal(_0x23151a){const _0x279f10=_0x4cceb5;index=index==0x0?randomGenerator(_0x23151a):index,index=index>_0x23151a[_0x279f10(0xa3)]-0x1?randomGenerator(_0x23151a):index,judul['innerHTML']=_0x279f10(0xa5)+_0x23151a[index][0x0],content[_0x279f10(0x92)]=_0x23151a[index][0x1],opsiA[_0x279f10(0x92)]=_0x23151a[index][0x2],opsiB[_0x279f10(0x92)]=_0x23151a[index][0x3],opsiC[_0x279f10(0x92)]=_0x23151a[index][0x4],opsiD[_0x279f10(0x92)]=_0x23151a[index][0x5],opsiE[_0x279f10(0x92)]=_0x23151a[index][0x6],textPenjelasan=_0x23151a[index][0x8],answer=_0x23151a[index][0x7],penjelasan[_0x279f10(0x92)]='Jawab\x20soal\x20terlebih\x20dahulu.',index+=0x1;}function randomGenerator(_0x1cc9e4){const _0xcfb56c=_0x4cceb5;var _0x5a0bc4=Math[_0xcfb56c(0xb2)](Math[_0xcfb56c(0xa4)]()*_0x1cc9e4[_0xcfb56c(0xa3)]);return _0x5a0bc4=_0x5a0bc4==0x0?_0x5a0bc4+0x1:_0x5a0bc4,_0x5a0bc4;}function unCheckRadio(){const _0x327c39=_0x4cceb5;for(const _0x4b10c0 of radioButtons){if(_0x4b10c0['checked']){_0x4b10c0[_0x327c39(0xab)]=![];break;}}}function anyCheckedRadio(){const _0x64fd89=_0x4cceb5;for(const _0x3b2c90 of radioButtons){if(_0x3b2c90[_0x64fd89(0xab)])return!![];}}function resetPesan(){const _0x1ad3d3=_0x4cceb5;pesan['classList'][_0x1ad3d3(0x8e)](_0x1ad3d3(0x9d)),pesan['classList'][_0x1ad3d3(0x8e)]('text-danger'),pesan['innerHTML']='';}function jawabanBenar(){const _0x3fdf9d=_0x4cceb5;pesan[_0x3fdf9d(0xa6)][_0x3fdf9d(0x8e)](_0x3fdf9d(0x99)),pesan[_0x3fdf9d(0xa6)][_0x3fdf9d(0x9f)](_0x3fdf9d(0x9d)),pesan['innerHTML']=_0x3fdf9d(0x86),nilaiCount++,nilai[_0x3fdf9d(0x92)]=_0x3fdf9d(0xb0)+nilaiCount;}function jawabanSalah(){const _0x198340=_0x4cceb5;pesan[_0x198340(0xa6)]['remove'](_0x198340(0x9d)),pesan[_0x198340(0xa6)][_0x198340(0x9f)](_0x198340(0x99)),pesan[_0x198340(0x92)]=_0x198340(0x96);}function periksaSoal(_0x4703c4){const _0x10f72d=_0x4cceb5;if(_0x4703c4['innerHTML']==_0x10f72d(0xac)){var _0x3ef23e=document[_0x10f72d(0xa9)](_0x10f72d(0x87)+answer),_0x588604=document['getElementById'](_0x10f72d(0x87)+selectedAnswer);_0x3ef23e[_0x10f72d(0xa6)][_0x10f72d(0x8e)]('bg-success'),_0x588604[_0x10f72d(0xa6)][_0x10f72d(0x8e)](_0x10f72d(0x90)),_0x3ef23e['classList'][_0x10f72d(0x8e)]('text-white'),_0x588604[_0x10f72d(0xa6)][_0x10f72d(0x8e)](_0x10f72d(0x80)),unCheckRadio(),setSoal(soal),_0x4703c4['innerHTML']=_0x10f72d(0x89),resetPesan();}else{if(anyCheckedRadio()){penjelasan[_0x10f72d(0x92)]=textPenjelasan;for(const _0x3f1af8 of radioButtons){if(_0x3f1af8['checked']){selectedAnswer=_0x3f1af8[_0x10f72d(0x8d)];break;}}if(answer==selectedAnswer){var _0x3ef23e=document['getElementById'](_0x10f72d(0x87)+answer);_0x3ef23e[_0x10f72d(0xa6)][_0x10f72d(0x9f)](_0x10f72d(0xb5)),_0x3ef23e['classList'][_0x10f72d(0x9f)]('text-white'),jawabanBenar();}else{var _0x3ef23e=document['getElementById'](_0x10f72d(0x87)+answer),_0x588604=document[_0x10f72d(0xa9)](_0x10f72d(0x87)+selectedAnswer);_0x3ef23e['classList'][_0x10f72d(0x9f)](_0x10f72d(0xb5)),_0x588604[_0x10f72d(0xa6)][_0x10f72d(0x9f)](_0x10f72d(0x90)),_0x3ef23e[_0x10f72d(0xa6)][_0x10f72d(0x9f)]('text-white'),_0x588604['classList'][_0x10f72d(0x9f)](_0x10f72d(0x80)),jawabanSalah();}_0x4703c4[_0x10f72d(0x92)]=_0x10f72d(0xac);}else pesan[_0x10f72d(0xa6)][_0x10f72d(0x9f)]('text-danger'),pesan[_0x10f72d(0x92)]='Silahkan\x20pilih\x20jawaban';}}function _0x1226(){const _0x11a9c0=['text-success','17hVJchJ-1OS-mWujh-BFtJXBNlCqU5tZ39lCAdLf5DQ','add','8650218wteWWX','stringify','then','length','random','Soal\x20#','classList','catch','[for=\x22opsiD\x22]','getElementById','45976dvcWsH','checked','Lanjut','content_soal','[for=\x22opsiC\x22]','querySelector','Nilai\x20:\x20','13216BicZHG','floor','1122kTsJgW','soal','bg-success','/values/A1:I100','text-white','1631XdOPDo','[for=\x22opsiA\x22]','[for=\x22opsiE\x22]','10358570NxSBHb','clear','Benar.\x20Lihat\x20penjelasan.','group','24301HNAAFD','Periksa','getItem','json','?key=AIzaSyCUTp5EetK6aKrIC_lBdmUBACFoMh3-XO0','value','remove','5jYhOpD','bg-danger','setItem','innerHTML','6505353EaJXLE','values','pesan','Salah.\x20Lihat\x20penjelasan.','1852490XRZQLU','log','text-danger','reload','https://sheets.googleapis.com/v4/spreadsheets/','judul_soal'];_0x1226=function(){return _0x11a9c0;};return _0x1226();}
+		
+	</script>
+  </body>
+</html>
